@@ -12,6 +12,6 @@ set cindent
 
 map! <C-A> <Esc>
 
-#set noundofile
-#set nobackup
-#set noswapfile
+set noundofile
+set nobackup
+set noswapfile
