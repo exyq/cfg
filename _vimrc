@@ -26,7 +26,3 @@ set cindent
 set cinoptions=g0,:0,N-s,(0
 set smartindent
 filetype indent on
-
-set completeopt-=preview
-set foldmethod=syntax
-set nofoldenable
