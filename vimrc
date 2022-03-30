@@ -16,7 +16,7 @@ set noundofile
 set nobackup
 set noswapfile
 
-set langmenu=zh_CN.UTF-7
+set langmenu=zh_CN.UTF-8
 set helplang=cn
 set termencoding=utf-8
 set encoding=utf8
