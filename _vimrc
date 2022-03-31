@@ -8,6 +8,7 @@ set hlsearch
 set incsearch
 set smartcase
 set cindent
+set backspace=indent,eol,start
 
 map! <C-A> <Esc>
 
