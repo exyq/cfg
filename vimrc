@@ -27,3 +27,9 @@ set cindent
 set cinoptions=g0,:0,N-s,(0
 set smartindent
 filetype indent on
+
+
+imap < <><ESC>i
+imap ( ()<ESC>i
+imap { {}<ESC>i
+imap [ []<ESC>i
