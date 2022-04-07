@@ -56,8 +56,10 @@ set smartindent
 filetype indent on
 
 call plug#begin('C:\Users\Eric\vim-plug')
+
 Plug 'iamcco/markdown-preview.nvim'
 Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 let g:mkdp_browser = 'Firefox'
