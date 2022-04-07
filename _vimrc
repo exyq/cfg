@@ -57,9 +57,8 @@ filetype indent on
 
 call plug#begin('C:\Users\Eric\vim-plug')
 
-Plug 'iamcco/markdown-preview.nvim'
 Plug 'vim-airline/vim-airline'
+Plug 'instant-markdown/vim-instant-markdown'
 
 call plug#end()
 
-let g:mkdp_browser = 'Firefox'
