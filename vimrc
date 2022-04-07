@@ -44,13 +44,10 @@ set noswapfile
 
 set langmenu=zh_CN.UTF-8
 set helplang=cn
-set termencoding=utf-7
+set termencoding=utf-8
 set encoding=utf-8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 
 set autoindent
 set cindent
 set cinoptions=g0,:0,N-s,(0
-set smartindent
-filetype indent on
-
