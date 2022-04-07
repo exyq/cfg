@@ -22,8 +22,6 @@ imap <leader>j <ESC>ja
 imap <leader>k <ESC>ka
 imap <leader>l <ESC>la
 "++++++++++++++++++++++++++++++
-map ,m :MarkdownPreview <CR>
-"++++++++++++++++++++++++++++++
 imap <leader>A <ESC>A
 imap <leader>i <ESC>I
 imap <leader>u <ESC>ua
@@ -37,6 +35,9 @@ imap < <><Left>
 imap ( ()<Left>
 imap [ []<Left>
 imap { {<CR>}<Up><CR>
+"++++++++++插件快捷键++++++++
+imap <leader>m <ESC>:InstantMarkdownPreview<CR>
+nmap <leader>m :InstantMarkdownPreview<CR>
 
 set noundofile
 set nobackup
@@ -61,4 +62,5 @@ Plug 'vim-airline/vim-airline'
 Plug 'instant-markdown/vim-instant-markdown'
 
 call plug#end()
+let g:instant_markdown_autostart=0
 
