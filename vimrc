@@ -16,6 +16,7 @@ map! <leader><leader> <ESC>
 map <leader><leader> <ESC>
 imap <leader>s <ESC>:w<CR>
 nmap <leader>s :w<CR>
+nmap <leader>q :wq<CR>
 "++++++++++++++++++++++++++++++
 imap <leader>h <ESC>ha
 imap <leader>j <ESC>ja
