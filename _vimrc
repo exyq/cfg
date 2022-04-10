@@ -8,6 +8,7 @@ set hlsearch
 set incsearch
 set smartcase
 set scrolloff=5
+set t_Co=256
 
 "++++++++++快捷键设置++++++++++
 let mapleader=";"
@@ -58,6 +59,8 @@ set cindent
 set cinoptions=g0,:0,N-s,(0
 set smartindent
 filetype indent on
+set tabstop=4
+set shiftwidth=4
 
 call plug#begin('C:\Users\Eric\vim-plug')
 

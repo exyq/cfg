@@ -9,6 +9,7 @@ set hlsearch
 set incsearch
 set smartcase
 set scrolloff=5
+set t_Co=256
 
 "++++++++++快捷键设置++++++++++
 let mapleader=";"
@@ -55,3 +56,5 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 set autoindent
 set cindent
 set cinoptions=g0,:0,N-s,(0
+set tabstop=4
+set shiftwidth=4
