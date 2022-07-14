@@ -39,9 +39,7 @@ imap [ []<Left>
 imap { {<CR>}<Up><CR>
 "++++++++++++++++++++++++++++
 nmap <leader><leader> <ESC>/<++><CR>:nohlsearch<CR>c4l
-"++++++++++插件快捷键++++++++
-imap <leader>m <ESC>:InstantMarkdownPreview<CR>
-nmap <leader>m :InstantMarkdownPreview<CR>
+
 
 set noundofile
 set nobackup
@@ -69,4 +67,6 @@ Plug 'instant-markdown/vim-instant-markdown'
 
 call plug#end()
 let g:instant_markdown_autostart=0
-
+"++++++++++插件快捷键++++++++
+imap <leader>m <ESC>:InstantMarkdownPreview<CR>
+nmap <leader>m :InstantMarkdownPreview<CR>
