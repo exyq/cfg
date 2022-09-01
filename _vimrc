@@ -33,15 +33,11 @@ imap <leader>V <ESC>V
 imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++括号补全++++++++++
-imap < <><Left>
 imap ( ()<Left>
 imap [ []<Left>
 imap { {<CR>}<Up><CR>
 "++++++++++++++++++++++++++++
 nmap <leader><leader> <ESC>/<++><CR>:nohlsearch<CR>c4l
-"++++++++++插件快捷键++++++++
-imap <leader>m <ESC>:InstantMarkdownPreview<CR>
-nmap <leader>m :InstantMarkdownPreview<CR>
 
 set noundofile
 set nobackup
@@ -61,12 +57,3 @@ set smartindent
 filetype indent on
 set tabstop=4
 set shiftwidth=4
-
-call plug#begin('C:\Users\Eric\vim-plug')
-
-Plug 'vim-airline/vim-airline'
-Plug 'instant-markdown/vim-instant-markdown'
-
-call plug#end()
-let g:instant_markdown_autostart=0
-

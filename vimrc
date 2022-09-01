@@ -34,7 +34,6 @@ imap <leader>V <ESC>V
 imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++括号补全++++++++++
-imap < <><Left>
 imap ( ()<Left>
 imap [ []<Left>
 imap { {<CR>}<Up><CR>
