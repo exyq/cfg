@@ -35,7 +35,6 @@ imap <leader>< <ESC><<
 "++++++++++括号补全++++++++++
 imap ( ()<Left>
 imap [ []<Left>
-imap { {<CR>}<Up><CR>
 "++++++++++++++++++++++++++++
 nmap <leader><leader> <ESC>/<++><CR>:nohlsearch<CR>c4l
 
