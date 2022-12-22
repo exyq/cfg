@@ -33,9 +33,11 @@ imap <leader>v <ESC>v
 imap <leader>V <ESC>V
 imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
-"++++++++++括号补全++++++++++
-imap ( ()<Left>
-imap [ []<Left>
+"++++++++++符号补全++++++++++
+imap < <><ESC>i
+imap ( ()<ESC>i
+imap [ []<ESC>i
+imap { {<CR>}<ESC>O
 
 set noundofile
 set nobackup
