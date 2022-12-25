@@ -12,9 +12,6 @@ set t_Co=256
 
 "++++++++++快捷键设置++++++++++
 let mapleader=";"
-vmap <leader><leader> <ESC>
-omap <leader><leader> <ESC>
-map! <leader><leader> <ESC>
 imap <leader>s <ESC>:w<CR>
 nmap <leader>s :w<CR>
 nmap <leader>q :wq<CR>
