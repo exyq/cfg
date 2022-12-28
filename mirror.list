@@ -16,3 +16,6 @@ https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.14/community
 #Termux
 termux-change-repo
 
+#Kali Linux
+deb https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main non-free contrib
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main non-free contrib
