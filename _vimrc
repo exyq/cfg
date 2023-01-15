@@ -8,7 +8,6 @@ set hlsearch
 set incsearch
 set smartcase
 set scrolloff=5
-set t_Co=256
 
 "++++++++++快捷键设置++++++++++
 let mapleader=";"
