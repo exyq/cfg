@@ -33,7 +33,7 @@ imap <leader>< <ESC><<
 imap < <><ESC>i
 imap ( ()<ESC>i
 imap [ []<ESC>i
-imap { {<CR>}<ESC>O
+imap { {}<ESC>i
 
 set noundofile
 set nobackup
