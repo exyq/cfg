@@ -13,7 +13,6 @@ $f = 'F:/'
 
 # function
 function cg {cd $git}
-function pushall {"$git\pushall.bat"}
 function reboot {shutdown -r -t 0}
 function shut {shutdown -s -t 0}
 
