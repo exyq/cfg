@@ -5,19 +5,19 @@ clear
 # variable
 $pro = $profile
 $git = 'C:/Users/git'
-$vim = '~/_vimrc'
+$vim = 'C:/Users/ericx/_vimrc'
 $c = 'C:/'
 $d = 'D:/'
 $e = 'E:/'
 $f = 'F:/'
 
 # function
-function cg {cd $git}
-function pushal {"$git\pushall.bat"}
+function cg {cd C:/Users/git}
+function pusha {C:/Users/git/push.bat}
 function reboot {shutdown -r -t 0}
 function shut {shutdown -s -t 0}
 
 #key
-~/Documents/Powershell/key.ps1
+C:/Users/ericx/Documents/Powershell/key.ps1
 
 
