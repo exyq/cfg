@@ -5,7 +5,7 @@ clear
 # variable
 $pro = $profile
 $git = 'C:/Users/git'
-$vim = '~/_vimrc'
+$vim = '~/.vimrc'
 $c = 'C:/'
 $d = 'D:/'
 $e = 'E:/'
