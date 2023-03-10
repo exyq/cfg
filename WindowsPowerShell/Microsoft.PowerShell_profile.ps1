@@ -17,6 +17,6 @@ function reboot {shutdown -r -t 0}
 function shut {shutdown -s -t 0}
 
 #key
-~/Documents/Powershell/key.ps1
+~/Documents/WindowsPowershell/key.ps1
 
 
