@@ -30,3 +30,15 @@ termux-change-repo
 #Kali Linux
 deb https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main non-free contrib
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main non-free contrib
+
+#Debian11 Linux
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+# deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+# # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+deb https://security.debian.org/debian-security bullseye-security main contrib non-free
+# deb-src https://security.debian.org/debian-security bullseye-security main contrib non-free
