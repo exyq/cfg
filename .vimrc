@@ -31,9 +31,17 @@ imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++符号补全++++++++++
 imap < <><ESC>i
+imap <; <ESC>F<xf>xi
+imap <> <ESC>xxi
 imap ( ()<ESC>i
+imap (; <ESC>F(xf)xi
+imap () <ESC>xxi
 imap [ []<ESC>i
+imap [; <ESC>F[xf]xi
+imap [] <ESC>xxi
 imap { {}<ESC>i
+imap {; <ESC>F{xf}xi
+imap {} <ESC>xxi
 
 set noundofile
 set nobackup
