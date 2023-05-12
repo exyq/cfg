@@ -1,5 +1,6 @@
 syntax on
 set number
+set ruler
 set relativenumber
 set wrap
 set showcmd
@@ -9,6 +10,7 @@ set incsearch
 set smartcase
 set scrolloff=5
 set mouse=""
+
 
 "++++++++++快捷键设置++++++++++
 let mapleader=";"
@@ -30,18 +32,17 @@ imap <leader>V <ESC>V
 imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++符号补全++++++++++
-imap < <><ESC>i
-imap <; <ESC>F<xf>xi
-imap <> <ESC>xxi
-imap ( ()<ESC>i
-imap (; <ESC>F(xf)xi
-imap () <ESC>xxi
-imap [ []<ESC>i
-imap [; <ESC>F[xf]xi
-imap [] <ESC>xxi
-imap { {}<ESC>i
-imap {; <ESC>F{xf}xi
-imap {} <ESC>xxi
+imap << <><LEFT>
+imap <> <ESC>F<xf>x
+imap (( ()<LEFT>
+imap () <ESC>F<xf>x
+imap [[ []<LEFT>
+imap [] <ESC>F<xf>x
+imap {{ {<CR>}<UP><CR>
+imap {; {}<LEFT>
+imap "" ""<LEFT>
+imap '' ''<LEFT>
+imap <DEL><DEL> <DEL><BS>
 
 set noundofile
 set nobackup
@@ -60,3 +61,4 @@ set smartindent
 filetype indent on
 set tabstop=4
 set shiftwidth=4
+
