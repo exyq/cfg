@@ -46,9 +46,10 @@ imap <DEL><DEL> <DEL><BS>
 cmap rel source ~/.vimrc<CR>
 cmap nl nohls<CR>
 
-"set noundofile
-"set nobackup
+set noundofile
+set nobackup
 "set noswapfile
+
 
 set langmenu=zh_CN.UTF-8
 set helplang=cn
