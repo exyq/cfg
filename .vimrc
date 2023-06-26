@@ -41,7 +41,6 @@ nmap [] F[xf]x
 imap {} {<CR>}<UP><END><CR>
 imap "" ""<LEFT>
 imap '' ''<LEFT>
-imap <DEL><DEL> <DEL><BS>
 
 cmap rel source ~/.vimrc<CR>
 cmap nl nohls<CR>
