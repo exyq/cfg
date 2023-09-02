@@ -73,4 +73,7 @@ autocmd FileType html imap <buffer> li<TAB> <li>$</li><ESC>F$s
 autocmd FileType html imap <buffer> div<TAB> <div><CR></div><ESC>O
 autocmd FileType html imap <buffer> img<TAB> <img src="$" width="@" height="%"><ESC>F$s
 autocmd FileType html imap <buffer> a<TAB> <a href="$"></a><ESC>F$s
+autocmd FileType html imap <buffer> le<TAB> align="left"
+autocmd FileType html imap <buffer> ri<TAB> align="right"
+autocmd FileType html imap <buffer> ce<TAB> align="center"
 """
