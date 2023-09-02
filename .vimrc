@@ -12,40 +12,6 @@ set scrolloff=5
 set mouse=""
 
 
-"++++++++++快捷键设置++++++++++
-let mapleader=";"
-imap <leader>s <ESC>:w<CR>
-nmap <leader>s :w<CR>
-nmap <leader>q :wq<CR>
-"++++++++++++++++++++++++++++++
-imap <leader>h <LEFT>
-imap <leader>j <DOWN>
-imap <leader>k <UP>
-imap <leader>l <RIGHT>
-"++++++++++++++++++++++++++++++
-imap <leader>A <ESC>A
-imap <leader>i <ESC>I
-imap <leader>u <ESC>ua
-imap <leader>p <ESC>lpi
-imap <leader>v <ESC>v
-imap <leader>V <ESC>V
-imap <leader>> <ESC>>>A
-imap <leader>< <ESC><<
-"++++++++++符号补全++++++++++
-imap <> <><LEFT>
-nmap <> F<xf>x
-imap () ()<LEFT>
-nmap () F(xf)x
-imap [] []<LEFT>
-nmap [] F[xf]x
-imap {} {<CR>}<UP><END><CR>
-imap "" ""<LEFT>
-imap '' ''<LEFT>
-imap !<TAB> <ESC>:r<SPACE>~/vim/html.vim<CR>kdd
-
-cmap rel source ~/.vimrc<CR>
-cmap nl nohls<CR>
-
 set noundofile
 set nobackup
 "set noswapfile
@@ -65,3 +31,46 @@ filetype indent on
 set tabstop=4
 set shiftwidth=4
 
+"++++++++++快捷键设置++++++++++
+let mapleader=";"
+imap <leader>s <ESC>:w<CR>
+nmap <leader>s :w<CR>
+nmap <leader>q :wq<CR>
+"++++++++++++++++++++++++++++++
+imap <leader>h <LEFT>
+imap <leader>j <DOWN>
+imap <leader>k <UP>
+imap <leader>l <RIGHT>
+"++++++++++++++++++++++++++++++
+imap <leader>A <ESC>A
+imap <leader>i <ESC>I
+imap <leader>u <ESC>ua
+imap <leader>p <ESC>lpi
+imap <leader>v <ESC>v
+imap <leader>V <ESC>V
+imap <leader>> <ESC>>>A
+imap <leader>< <ESC><<
+"++++++++++++++++++++++++++++++
+cmap rel source ~/.vimrc<CR>
+cmap nl nohls<CR>
+"++++++++++符号补全++++++++++
+imap <> <><LEFT>
+imap () ()<LEFT>
+imap [] []<LEFT>
+imap {} {<CR>}<UP><END><CR>
+imap "" ""<LEFT>
+imap '' ''<LEFT>
+
+" html Compiler
+"autocmd FileType html imap <buffer> !<TAB> <ESC>:r<SPACE>~/vauto/html/frame.va<CR>kdd
+autocmd FileType html imap <buffer> !<TAB> <!DOCTYPE<SPACE>html><CR><html><CR><head><CR><title></title><CR><meta charset="UTF-8"><CR></head><CR><body><CR><CR></body><CR></html><ESC><<kka<TAB>
+autocmd FileType html imap <buffer> /<TAB> </><ESC><<f/a
+autocmd FileType html imap <buffer> p<TAB> <p>$</p><ESC>F$s
+autocmd FileType html imap <buffer> .<TAB> class="$"<ESC>F$s
+autocmd FileType html imap <buffer> #<TAB> id="$"<ESC>F$s
+autocmd FileType html imap <buffer> ul<TAB> <ul><CR><li>$</li><CR></ul><ESC>kf$s
+autocmd FileType html imap <buffer> li<TAB> <li>$</li><ESC>F$s
+autocmd FileType html imap <buffer> div<TAB> <div><CR></div><ESC>O
+autocmd FileType html imap <buffer> img<TAB> <img src="$" width="@" height="%"><ESC>F$s
+autocmd FileType html imap <buffer> a<TAB> <a href="$"></a><ESC>F$s
+"""
