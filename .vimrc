@@ -35,7 +35,6 @@ set shiftwidth=4
 let mapleader=";"
 imap <leader>s <ESC>:w<CR>
 nmap <leader>s :w<CR>
-nmap <leader>q :wq<CR>
 "++++++++++++++++++++++++++++++
 imap <leader>h <LEFT>
 imap <leader>j <DOWN>
@@ -62,18 +61,30 @@ imap "" ""<LEFT>
 imap '' ''<LEFT>
 
 " html Compiler
-"autocmd FileType html imap <buffer> !<TAB> <ESC>:r<SPACE>~/vauto/html/frame.va<CR>kdd
 autocmd FileType html imap <buffer> !<TAB> <!DOCTYPE<SPACE>html><CR><html><CR><head><CR><title></title><CR><meta charset="UTF-8"><CR></head><CR><body><CR><CR></body><CR></html><ESC><<kka<TAB>
 autocmd FileType html imap <buffer> /<TAB> </><ESC><<f/a
+autocmd FileType html imap <buffer> </ </><ESC>F/a
 autocmd FileType html imap <buffer> p<TAB> <p>$</p><ESC>F$s
-autocmd FileType html imap <buffer> .<TAB> class="$"<ESC>F$s
-autocmd FileType html imap <buffer> #<TAB> id="$"<ESC>F$s
 autocmd FileType html imap <buffer> ul<TAB> <ul><CR><li>$</li><CR></ul><ESC>kf$s
+autocmd FileType html imap <buffer> ol<TAB> <ol><CR><li>$</li><CR></ol><ESC>kf$s
+autocmd FileType html imap <buffer> dl<TAB> <dl><CR><dt>$</dt><CR></dl><ESC>kf$s
+autocmd FileType html imap <buffer> dt<TAB> <dt>$</dt><ESC>F$s
+autocmd FileType html imap <buffer> dd<TAB> <dd>$</dd><ESC>F$s
 autocmd FileType html imap <buffer> li<TAB> <li>$</li><ESC>F$s
 autocmd FileType html imap <buffer> div<TAB> <div><CR></div><ESC>O
-autocmd FileType html imap <buffer> img<TAB> <img src="$" width="@" height="%"><ESC>F$s
+autocmd FileType html imap <buffer> img<TAB> <img src="$"><ESC>F$s
+
+autocmd FileType html imap <buffer> span<TAB> <span><CR></span><ESC>O
+autocmd FileType html imap <buffer> style<TAB> <style<SPACE>type="text/css"><CR></style><ESC>O
 autocmd FileType html imap <buffer> a<TAB> <a href="$"></a><ESC>F$s
 autocmd FileType html imap <buffer> le<TAB> align="left"
 autocmd FileType html imap <buffer> ri<TAB> align="right"
 autocmd FileType html imap <buffer> ce<TAB> align="center"
+autocmd FileType html imap <buffer> wi<TAB> width=""<LEFT>
+autocmd FileType html imap <buffer> he<TAB> height=""<LEFT>
+autocmd FileType html imap <buffer> ty<TAB> type=""<LEFT>
+autocmd FileType html imap <buffer> al<TAB> alt=""<LEFT>
+autocmd FileType html imap <buffer> id<TAB> id=""<LEFT>
+autocmd FileType html imap <buffer> cl<TAB> class=""<LEFT>
+autocmd FIleType html imap <buffer> .<TAB> <ESC>f>a
 """
