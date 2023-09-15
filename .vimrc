@@ -37,6 +37,10 @@ let mapleader=";"
 set timeoutlen=300
 imap <leader>s <ESC>:w<CR>
 nmap <leader>s :w<CR>
+imap <leader><leader> <ESC>
+cmap <leader><leader> <ESC>
+nmap <leader><leader> <ESC>
+vmap <leader><leader> <ESC>
 "++++++++++++++++++++++++++++++
 imap <leader>h <LEFT>
 imap <leader>j <DOWN>
