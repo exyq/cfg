@@ -64,8 +64,8 @@ imap '' ''<LEFT>
 
 " html Compiler
 autocmd FileType html imap <buffer> !<TAB> <!DOCTYPE<SPACE>html><CR><html><CR><head><CR><title></title><CR><meta charset="UTF-8"><CR></head><CR><body><CR><CR></body><CR></html><ESC><<kka<TAB>
-autocmd FileType html imap <buffer> /<TAB> </><ESC><<f/a
-autocmd FileType html imap <buffer> // </><ESC>F/a
+"autocmd FileType html imap <buffer> /<TAB> </><ESC><<f/a
+autocmd FileType html imap <buffer> /<TAB> </><ESC>F/a
 autocmd FileType html imap <buffer> p<TAB> <p>$</p><ESC>F$s
 autocmd FileType html imap <buffer> ul<TAB> <ul><CR><li>$</li><CR></ul><ESC>kf$s
 autocmd FileType html imap <buffer> ol<TAB> <ol><CR><li>$</li><CR></ol><ESC>kf$s
@@ -90,6 +90,3 @@ autocmd FileType html imap <buffer> id<TAB> id=""<LEFT>
 autocmd FileType html imap <buffer> cl<TAB> class=""<LEFT>
 autocmd FIleType html imap <buffer> .<TAB> <ESC>f>a
 """
-" dictionary
-autocmd FileType html set dictionary=$VIM/dict/html.dict
-autocmd FileType html set dictionary+=~/dict/html.dict
