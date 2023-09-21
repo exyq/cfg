@@ -1,5 +1,6 @@
 syntax on
 set number
+set cursorline
 set ruler
 set relativenumber
 set wrap
@@ -31,10 +32,16 @@ set backspace=indent,eol,start
 "filetype indent on
 set tabstop=3
 set shiftwidth=3
+
+"++++++++++ Color +++++++++++++
 set list
-set listchars+=eol:~,tab:\ \|\ ,space:_
-hi SpecialKey guifg=darkgrey ctermfg=darkgrey
-hi NonText guifg=darkgrey ctermfg=darkgrey
+set listchars=eol:\ ,tab:\ \|\ ,space:\ 
+"hi SpecialKey guifg=darkgrey ctermfg=darkgrey
+"hi NonText guifg=darkgrey ctermfg=darkgray
+hi CursorLine ctermbg=NONE ctermfg=NONE 
+set t_Co=256
+hi Normal ctermbg=233 guibg=NONE ctermfg=252
+colorscheme slate
 
 "++++++++++快捷键设置++++++++++
 let mapleader=";"
@@ -61,12 +68,13 @@ imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++++++++++++++++++++++
 cmap rel source ~/.vimrc<CR>
-cmap nl nohls<CR>
-""Vim-plug
+cmap nl nohls<CR>:<CR>
+
+"+++++++++ Vim-Plug +++++++++++
 call plug#begin('~/vplug')
 Plug '~/vplug/emmet'
-let g:user_emmet_leader_key='<C-Z>'
 Plug '~/vplug/vim-airline'
+let g:user_emmet_leader_key='<C-Z>'
 Plug '~/vplug/nerdtree'
 map <A-S-E> :NERDTreeToggle<CR>
 Plug '~/vplug/auto-pairs'
@@ -74,4 +82,11 @@ Plug '~/vplug/vim-autoformat'
 Plug '~/vplug/vim-visual-multi'
 Plug '~/vplug/undotree'
 nmap <A-u> :UndotreeToggle<CR>
+Plug '~/vplug/AutoComplPop'
 call plug#end()
+
+"+++++++++ Dictionary +++++++++
+autocmd FileType html set dictionary=~/vplug/vdict/html.dict
+autocmd BufRead,BufNewFile set dictionary=~/vplug/vdict/vimrc.dict
+
+
