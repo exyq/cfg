@@ -74,5 +74,4 @@ Plug '~/vplug/vim-autoformat'
 Plug '~/vplug/vim-visual-multi'
 Plug '~/vplug/undotree'
 nmap <A-u> :UndotreeToggle<CR>
-Plug '~/vplug/vim-markdown'
 call plug#end()
