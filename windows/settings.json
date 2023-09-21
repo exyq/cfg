@@ -4,12 +4,16 @@
     "actions": 
     [
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
-                "direction": "down"
+                "direction": "left"
             },
-            "keys": "alt+shift+j"
+            "keys": "alt+shift+h"
         },
         {
             "command": 
@@ -23,16 +27,9 @@
             "command": 
             {
                 "action": "resizePane",
-                "direction": "left"
+                "direction": "down"
             },
-            "keys": "alt+shift+h"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste"
+            "keys": "alt+shift+j"
         },
         {
             "command": 
@@ -41,6 +38,9 @@
                 "direction": "up"
             },
             "keys": "alt+shift+k"
+        },
+        {
+            "command": "paste"
         },
         {
             "command": 
@@ -103,6 +103,18 @@
             "keys": "alt+left"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+4"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+d"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -154,10 +166,22 @@
         {
             "command": 
             {
+                "action": "newTab",
+                "index": 3
+            },
+            "keys": "ctrl+shift+s"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "left"
             },
             "keys": "ctrl+alt+h"
+        },
+        {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+k"
         },
         {
             "command": 
@@ -182,6 +206,13 @@
                 "direction": "left"
             },
             "keys": "alt+h"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+alt+shift+t"
         }
     ],
     "copyFormatting": "none",
@@ -192,6 +223,12 @@
     "focusFollowMouse": true,
     "initialCols": 90,
     "initialRows": 30,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -220,12 +257,6 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
-                "hidden": false,
-                "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -234,6 +265,13 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe\" \"--defaults-file=C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" \"-uroot\" \"-p\" \"--default-character-set=utf8mb4\"",
+                "guid": "{50e76342-1590-48a9-adf0-86a1f13703df}",
+                "hidden": false,
+                "name": "MySQL-Shell",
+                "tabTitle": "MySQL-Shell"
             }
         ]
     },
@@ -448,6 +486,50 @@
         }
     ],
     "theme": "dark",
-    "themes": [],
+    "themes": 
+    [
+        {
+            "name": "legacyDark",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyLight",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "system",
+                "useMica": false
+            }
+        }
+    ],
     "useAcrylicInTabRow": true
 }
