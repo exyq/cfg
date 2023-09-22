@@ -68,7 +68,7 @@ imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++++++++++++++++++++++
 cmap rel source ~/.vimrc<CR>
-cmap nl nohls<CR>:<CR>
+cmap nl nohls<CR>
 
 "+++++++++ Vim-Plug +++++++++++
 call plug#begin('~/vplug')
@@ -86,7 +86,9 @@ Plug '~/vplug/AutoComplPop'
 call plug#end()
 
 "+++++++++ Dictionary +++++++++
-autocmd FileType html set dictionary=~/vplug/vdict/html.dict
-autocmd BufRead,BufNewFile set dictionary=~/vplug/vdict/vimrc.dict
+autocmd FileType html set dictionary=~/vdict/html.dict
+autocmd BufRead,BufNewFile set dictionary=~/vdict/vimrc.dict
+autocmd FileType sql set dictionary=~/vdict/sql.dict
+
 
 
