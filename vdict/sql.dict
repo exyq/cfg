@@ -1,16 +1,20 @@
 <,a>
 alter
 asc
+autocommit
+auto_increment
 <,b>
 bit
 bigint
 binary
 between
+begin
 <,c>
 char
 create
 check
 constraint
+commit
 cursor
 <,d>
 database
@@ -24,8 +28,8 @@ datetime
 databases
 datetime2
 datetimeoffset
-
 <,e>
+excute
 <,f>
 float
 from
@@ -39,6 +43,7 @@ hierarchyid
 image
 insert
 inner
+index
 into
 <,j>
 join
@@ -60,6 +65,7 @@ null
 not
 <,o>
 order
+outfile
 <,p>
 primary
 
@@ -68,6 +74,7 @@ primary
 real
 references
 rownum
+rollback
 <,s>
 smallint
 smalldatetime

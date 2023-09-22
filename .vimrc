@@ -74,7 +74,8 @@ cmap nl nohls<CR>
 call plug#begin('~/vplug')
 Plug '~/vplug/emmet'
 Plug '~/vplug/vim-airline'
-let g:user_emmet_leader_key='<C-Z>'
+"let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_expandabbr_key='<Tab>'
 Plug '~/vplug/nerdtree'
 map <A-S-E> :NERDTreeToggle<CR>
 Plug '~/vplug/auto-pairs'
