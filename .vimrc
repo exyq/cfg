@@ -83,12 +83,10 @@ Plug '~/vplug/vim-visual-multi'
 Plug '~/vplug/undotree'
 nmap <A-u> :UndotreeToggle<CR>
 Plug '~/vplug/AutoComplPop'
+Plug '~/vplug/vim-dict'
 call plug#end()
 
 "+++++++++ Dictionary +++++++++
-autocmd FileType html set dictionary=~/vdict/html.dict
-autocmd BufRead,BufNewFile set dictionary=~/vdict/vimrc.dict
+autocmd BufRead,BufNewFile *.vimrc set dictionary=~/vdict/vimrc.dict
 autocmd FileType sql set dictionary=~/vdict/sql.dict
-
-
 
