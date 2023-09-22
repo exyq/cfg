@@ -25,10 +25,10 @@ set encoding=utf-8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 
 set backspace=indent,eol,start
-"set cindent
+set cindent
 "set autoindent
 "set smartindent
-"set cinoptions=g0,:0,N-s,(0
+set cinoptions=g0,:0,N-s,(0
 "filetype indent on
 set tabstop=3
 set shiftwidth=3
@@ -74,19 +74,17 @@ cmap nl nohls<CR>
 call plug#begin('~/vplug')
 Plug '~/vplug/emmet'
 Plug '~/vplug/vim-airline'
-"let g:user_emmet_leader_key='<C-Z>'
-let g:user_emmet_expandabbr_key='<Tab>'
+"let g:user_emmet_leader_key='<C-Space>'
+let g:user_emmet_expandabbr_key='<S-Tab>'
 Plug '~/vplug/nerdtree'
 map <A-S-E> :NERDTreeToggle<CR>
 Plug '~/vplug/auto-pairs'
-Plug '~/vplug/vim-autoformat'
 Plug '~/vplug/vim-visual-multi'
 Plug '~/vplug/undotree'
 nmap <A-u> :UndotreeToggle<CR>
 Plug '~/vplug/AutoComplPop'
 Plug '~/vplug/vim-dict'
 call plug#end()
-
 "+++++++++ Dictionary +++++++++
 autocmd BufRead,BufNewFile *.vimrc set dictionary=~/vdict/vimrc.dict
 autocmd FileType sql set dictionary=~/vdict/sql.dict
