@@ -13,9 +13,14 @@ set scrolloff=5
 set mouse=""
 
 
-set noundofile
-set nobackup
+set undofile
+set backup
+"set noundofile
+set undodir=~/.vim/undo
+"set nobackup
+set backupdir=~/.vim/backup
 "set noswapfile
+set directory=~/.vim/swap
 
 
 set langmenu=zh_CN.UTF-8
@@ -68,7 +73,7 @@ imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
 "++++++++++++++++++++++++++++++
 cmap rel source ~/.vimrc<CR>
-cmap nl nohls<CR>
+cmap nh nohls<CR>
 
 "+++++++++ Vim-Plug +++++++++++
 call plug#begin('~/vplug')
