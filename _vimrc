@@ -76,7 +76,7 @@ imap <leader>< <ESC><<
 "++++++++++++++++++++++++++++++
 cmap rel source $VIM/_vimrc<CR>
 cmap nh nohls<CR>
-cmap fcp fenc=cp936
+cmap fe fenc=
 
 "+++++++++ Vim-Plug +++++++++++
 silent! call plug#begin('$VIM/vplug')
