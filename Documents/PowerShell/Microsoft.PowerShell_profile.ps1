@@ -5,7 +5,8 @@ clear
 # variable
 $p = $profile
 $g = 'C:/git/'
-$v = '~/.vimrc'
+$VIM = 'C:/Program Files (x86)/Vim'
+$v = 'C:/Program Files (x86)/Vim/_vimrc'
 $c = 'C:/'
 $d = 'D:/'
 $e = 'E:/'

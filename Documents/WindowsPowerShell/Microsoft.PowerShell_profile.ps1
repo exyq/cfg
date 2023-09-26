@@ -5,7 +5,8 @@ clear
 # variable
 $p = $profile
 $g = 'C:/git/'
-$v = '~/.vimrc'
+$VIM = 'C:/Program Files (x86)/Vim'
+$v = 'C:/Program Files (x86)/Vim/_vimrc'
 $c = 'C:/'
 $d = 'D:/'
 $e = 'E:/'
@@ -17,6 +18,6 @@ function reboot {shutdown -r -t 0}
 function shut {shutdown -s -t 0}
 
 #key
-~/Documents/WindowsPowershell/key.ps1
+~/Documents/Powershell/key.ps1
 
 

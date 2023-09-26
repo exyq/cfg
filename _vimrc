@@ -16,11 +16,11 @@ set mouse=""
 set undofile
 set backup
 "set noundofile
-set undodir=~/.vim/undo
+set undodir=$VIM/.vim/undo
 "set nobackup
-set backupdir=~/.vim/backup
+set backupdir=$VIM/.vim/backup
 "set noswapfile
-set directory=~/.vim/swap
+set directory=$VIM/.vim/swap
 
 
 set langmenu=zh_CN.UTF-8
@@ -37,6 +37,7 @@ set cinoptions=g0,:0,N-s,(0
 "filetype indent on
 set tabstop=3
 set shiftwidth=3
+set foldmethod=indent
 
 "++++++++++ Color +++++++++++++
 set list
@@ -58,10 +59,10 @@ cmap <leader><leader> <ESC>
 nmap <leader><leader> <ESC>
 vmap <leader><leader> <ESC>
 "++++++++++++++++++++++++++++++
-imap <leader>h <LEFT>
-imap <leader>j <DOWN>
-imap <leader>k <UP>
-imap <leader>l <RIGHT>
+imap hh <LEFT>
+imap jj <DOWN>
+imap kk <UP>
+imap ll <RIGHT>
 "++++++++++++++++++++++++++++++
 imap <leader>A <ESC>A
 imap <leader>i <ESC>I
@@ -71,26 +72,28 @@ imap <leader>v <ESC>v
 imap <leader>V <ESC>V
 imap <leader>> <ESC>>>A
 imap <leader>< <ESC><<
+
 "++++++++++++++++++++++++++++++
-cmap rel source ~/.vimrc<CR>
+cmap rel source $VIM/_vimrc<CR>
 cmap nh nohls<CR>
 
 "+++++++++ Vim-Plug +++++++++++
-call plug#begin('~/vplug')
-Plug '~/vplug/emmet'
-Plug '~/vplug/vim-airline'
+silent! call plug#begin('$VIM/vplug')
+Plug '$VIM/vplug/emmet'
+Plug '$VIM/vplug/vim-airline'
 "let g:user_emmet_leader_key='<C-Space>'
 let g:user_emmet_expandabbr_key='<S-Tab>'
-Plug '~/vplug/nerdtree'
+Plug '$VIM/vplug/nerdtree'
 map <A-S-E> :NERDTreeToggle<CR>
-Plug '~/vplug/auto-pairs'
-Plug '~/vplug/vim-visual-multi'
-Plug '~/vplug/undotree'
+Plug '$VIM/vplug/auto-pairs'
+Plug '$VIM/vplug/vim-visual-multi'
+Plug '$VIM/vplug/undotree'
 nmap <A-u> :UndotreeToggle<CR>
-Plug '~/vplug/AutoComplPop'
-Plug '~/vplug/vim-dict'
+Plug '$VIM/vplug/AutoComplPop'
+Plug '$VIM/vplug/vim-dict'
+Plug '$VIM/vplug/fcitx.vim'
 call plug#end()
 "+++++++++ Dictionary +++++++++
-autocmd BufRead,BufNewFile *.vimrc set dictionary=~/vdict/vimrc.dict
-autocmd FileType sql set dictionary=~/vdict/sql.dict
+autocmd BufRead,BufNewFile *.vimrc set dictionary=$VIM/vdict/vimrc.dict
+autocmd FileType sql set dictionary=$VIM/vdict/sql.dict
 
