@@ -1,0 +1,43 @@
+"++++++ CHsign to ENsign ++++++
+map ， ,
+map 。 .
+map 、 \
+map · `
+map ； ;
+map ： :
+map “ "
+map ’ '
+map ” "
+map ‘ '
+map （ (
+map ）)
+map 【 [
+map 】 ]
+map 《 <
+map 》 >
+map ！ !
+map ？ ?
+map —— _
+map …… ^
+map ￥ $
+map! ， ,
+map! 。 .
+map! 、 \
+map! · `
+map! ； ;
+map! ： :
+map! “ "
+map! ’ '
+map! ” "
+map! ‘ '
+map! （ (
+map! ）)
+map! 【 [
+map! 】 ]
+map! 《 <
+map! 》 >
+map! ！ !
+map! ？ ?
+map! —— _
+map! …… ^
+map! ￥ $
