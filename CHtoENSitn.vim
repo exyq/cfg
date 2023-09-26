@@ -10,7 +10,6 @@ map ’ '
 map ” "
 map ‘ '
 map （ (
-map ）)
 map 【 [
 map 】 ]
 map 《 <
@@ -31,7 +30,6 @@ map! ’ '
 map! ” "
 map! ‘ '
 map! （ (
-map! ）)
 map! 【 [
 map! 】 ]
 map! 《 <
