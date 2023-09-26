@@ -76,6 +76,7 @@ imap <leader>< <ESC><<
 "++++++++++++++++++++++++++++++
 cmap rel source $VIM/_vimrc<CR>
 cmap nh nohls<CR>
+cmap fcp fenc=cp936
 
 "+++++++++ Vim-Plug +++++++++++
 silent! call plug#begin('$VIM/vplug')
@@ -94,6 +95,6 @@ Plug '$VIM/vplug/vim-dict'
 Plug '$VIM/vplug/fcitx.vim'
 call plug#end()
 "+++++++++ Dictionary +++++++++
-autocmd BufRead,BufNewFile *.vimrc set dictionary=$VIM/vdict/vimrc.dict
+autocmd BufRead,BufNewFile *.vimrc set dictionary=$VIM/vplug/vim-dict/dict/vim.dic
 autocmd FileType sql set dictionary=$VIM/vdict/sql.dict
 
