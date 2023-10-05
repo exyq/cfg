@@ -29,3 +29,7 @@ Set-PSReadlineKeyHandler -Key alt+b -Function BackwardWord
 # swap the sign to before
 Set-PSReadlineKeyHandler -Key ctrl+t -Function SwapCharacters
 # Set-PSReadlineKeyHandler -Key  -Function 
+# TabMenu
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -key DownArrow -Function HistorySearchForward
