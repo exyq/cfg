@@ -4,16 +4,31 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": 
             {
                 "action": "resizePane",
                 "direction": "left"
             },
             "keys": "alt+shift+h"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+alt+f"
+        },
+        {
+            "command": 
+            {
+                "action": "closeOtherTabs"
+            },
+            "keys": "ctrl+alt+shift+o"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+j"
         },
         {
             "command": 
@@ -27,17 +42,17 @@
             "command": 
             {
                 "action": "resizePane",
-                "direction": "down"
+                "direction": "up"
             },
-            "keys": "alt+shift+j"
+            "keys": "alt+shift+k"
         },
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
+                "action": "switchToTab",
+                "index": 3
             },
-            "keys": "alt+shift+k"
+            "keys": "alt+4"
         },
         {
             "command": "paste"
@@ -47,8 +62,23 @@
             {
                 "action": "copy",
                 "singleLine": false
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 7
             },
-            "keys": "ctrl+c"
+            "keys": "alt+8"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            }
         },
         {
             "command": "unbound",
@@ -115,13 +145,208 @@
             "keys": "ctrl+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
+            "command": "unbound",
+            "keys": "ctrl+alt+9"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+3"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+4"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+6"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+7"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+8"
+        },
+        {
+            "command": "unbound",
+            "keys": "f11"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad0"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+s"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+6"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+7"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+8"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+9"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+shift+t"
+        },
+        {
+            "command": "unbound",
+            "keys": "win+sc(41)"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+insert"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad_plus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+f4"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+end"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+home"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+f"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+comma"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+comma"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+shift+i"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+shift+plus"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+0"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+r"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+plus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+shift+delete"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+delete"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+shift+["
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+space"
+        },
+        {
+            "command": "unbound",
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": "unbound",
+            "keys": "enter"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+c"
         },
         {
             "command": 
@@ -136,8 +361,7 @@
             {
                 "action": "moveFocus",
                 "direction": "previous"
-            },
-            "keys": "ctrl+shift+b"
+            }
         },
         {
             "command": 
@@ -150,14 +374,6 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "keys": "ctrl+alt+l"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
@@ -166,10 +382,10 @@
         {
             "command": 
             {
-                "action": "newTab",
-                "index": 3
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "ctrl+shift+s"
+            "keys": "ctrl+alt+l"
         },
         {
             "command": 
@@ -180,8 +396,14 @@
             "keys": "ctrl+alt+h"
         },
         {
-            "command": "duplicateTab",
-            "keys": "ctrl+shift+k"
+            "command": 
+            {
+                "action": "newTab",
+                "index": 3
+            }
+        },
+        {
+            "command": "duplicateTab"
         },
         {
             "command": 
@@ -202,6 +424,12 @@
         {
             "command": 
             {
+                "action": "addMark"
+            }
+        },
+        {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "left"
             },
@@ -212,7 +440,177 @@
             {
                 "action": "newTab"
             },
-            "keys": "ctrl+alt+shift+t"
+            "keys": "ctrl+alt+t"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 1
+            },
+            "keys": "alt+2"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 4294967295
+            },
+            "keys": "alt+0"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 0
+            },
+            "keys": "alt+1"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 2
+            },
+            "keys": "alt+3"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 4
+            },
+            "keys": "alt+5"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollToMark"
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 6
+            },
+            "keys": "alt+7"
+        },
+        {
+            "command": 
+            {
+                "action": "findMatch",
+                "direction": "prev"
+            },
+            "keys": "ctrl+shift+["
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 5
+            },
+            "keys": "alt+6"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "right"
+            },
+            "keys": "ctrl+alt+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+y"
+        },
+        {
+            "command": "scrollUpPage",
+            "keys": "ctrl+shift+b"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+shift+e"
+        },
+        {
+            "command": "scrollDownPage",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "closeWindow",
+            "keys": "ctrl+alt+shift+w"
+        },
+        {
+            "command": 
+            {
+                "action": "experimental.colorSelection"
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "up"
+            },
+            "keys": "ctrl+alt+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "down"
+            },
+            "keys": "ctrl+alt+shift+j"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "left"
+            },
+            "keys": "ctrl+alt+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "first"
+            },
+            "keys": "ctrl+alt+shift+0"
+        },
+        {
+            "command": "clearAllMarks"
+        },
+        {
+            "command": "clearMark"
+        },
+        {
+            "command": 
+            {
+                "action": "focusPane"
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "findMatch",
+                "direction": "next"
+            },
+            "keys": "ctrl+shift+]"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "first"
+            },
+            "keys": "ctrl+alt+shift+r"
         }
     ],
     "copyFormatting": "none",
@@ -257,21 +655,14 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe\" \"--defaults-file=C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" \"-uroot\" \"-p\" \"--default-character-set=utf8mb4\"",
-                "guid": "{50e76342-1590-48a9-adf0-86a1f13703df}",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "MySQL-Shell",
-                "tabTitle": "MySQL-Shell"
+                "name": "Command Prompt"
             }
         ]
     },
