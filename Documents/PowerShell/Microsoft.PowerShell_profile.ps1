@@ -1,6 +1,7 @@
 # init
 chcp 65001
 clear
+D:\Terminal\oh-my-posh\bin\oh-my-posh.exe init pwsh -c D:\Terminal\oh-my-posh\themes\montys.omp.json | invoke-expression
 
 # variable
 $p = $profile

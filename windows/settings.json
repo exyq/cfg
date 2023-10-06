@@ -631,19 +631,24 @@
     {
         "defaults": 
         {
+            "adjustIndistinguishableColors": "always",
             "bellStyle": 
             [
                 "audible",
                 "taskbar"
             ],
+            "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Cascadia Code"
+                "face": "JetBrainsMono Nerd Font Propo",
+                "size": 11.0,
+                "weight": 496
             },
             "opacity": 65,
             "padding": "3",
             "scrollbarState": "hidden",
-            "useAcrylic": true
+            "useAcrylic": true,
+            "useAtlasEngine": true
         },
         "list": 
         [
