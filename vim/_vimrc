@@ -13,6 +13,7 @@ set scrolloff=5
 set mouse=""
 set shortmess=atI
 
+
 set undofile
 set backup
 "set noundofile
@@ -59,10 +60,11 @@ cmap <leader><leader> <ESC>
 nmap <leader><leader> <ESC>
 vmap <leader><leader> <ESC>
 "++++++++++++++++++++++++++++++
-imap hh <LEFT>
-imap jj <DOWN>
-imap kk <UP>
-imap ll <RIGHT>
+imap <leader>h <LEFT>
+imap <leader>j <DOWN>
+imap <leader>k <UP>
+imap <leader>l <RIGHT>
+
 "++++++++++++++++++++++++++++++
 imap <leader>A <ESC>A
 imap <leader>i <ESC>I

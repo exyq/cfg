@@ -31,6 +31,18 @@ Set-PSReadlineKeyHandler -Key ctrl+t -Function SwapCharacters
 # Set-PSReadlineKeyHandler -Key  -Function 
 # TabMenu
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-# Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadlineKeyHandler -Key Shift-Tab -Function HistorySearchBackward
-Set-PSReadlineKeyHandler -key DownArrow -Function HistorySearchForward
+#Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Key UpArrow -ScriptBlock {
+	[Microsoft.PowerShell.PSConsoleReadLine]::HistorySearchBackward()
+	[Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
+}
+#Set-PSReadlineKeyHandler -Key Shift-Tab -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Key Shift-Tab -ScriptBlock {
+	[Microsoft.PowerShell.PSConsoleReadLine]::HistorySearchBackward()
+	[Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
+}
+#Set-PSReadlineKeyHandler -key DownArrow -Function HistorySearchForward
+Set-PSReadlineKeyHandler -Key DownArrow -ScriptBlock {
+	[Microsoft.PowerShell.PSConsoleReadLine]::HistorySearchForward()
+	[Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
+}
